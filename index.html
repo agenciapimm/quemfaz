@@ -1,0 +1,365 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Procuramos Quem Faz Brasil</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: LP mobile-first em faixas de cor da marca (roxo / claro / laranja), uma coluna estreita, CTA de WhatsApp sempre à mão. Visual único da marca, sem modo escuro por escolha. */
+:root{
+  --roxo:#3A1A6B;
+  --roxo-2:#4C2A86;
+  --roxo-fundo:#2B1352;
+  --laranja:#FF5F29;
+  --laranja-escuro:#D9461A;
+  --lilas:#F3EEFB;
+  --papel:#FFFFFF;
+  --tinta:#221438;
+  --tinta-suave:#5E5272;
+  --linha:#E3DAF2;
+  --zap:#1FB855;
+  --f-display:'Lexend', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --f-corpo:'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--papel);color:var(--tinta);font-family:var(--f-corpo);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.08;letter-spacing:-.015em}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--laranja);outline-offset:3px;border-radius:6px}
+
+.faixa{padding-block:56px}
+.miolo{max-width:640px;margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+.olho{font-family:var(--f-display);font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase}
+
+/* ---------- Logo ---------- */
+.logo{display:block;width:150px;height:auto;color:#fff}
+.logo-roxo{color:var(--roxo)}
+
+/* ---------- Botões ---------- */
+.btn-zap{
+  display:flex;align-items:center;justify-content:center;gap:12px;
+  width:100%;min-height:62px;padding:14px 22px;border-radius:16px;
+  background:var(--laranja);color:#fff;text-decoration:none;
+  font-family:var(--f-display);font-weight:700;font-size:19px;letter-spacing:-.01em;
+  box-shadow:0 10px 0 -2px var(--laranja-escuro);
+  transition:transform .15s ease, box-shadow .15s ease;
+}
+.btn-zap:hover{transform:translateY(-2px);box-shadow:0 12px 0 -2px var(--laranja-escuro)}
+.btn-zap:active{transform:translateY(4px);box-shadow:0 4px 0 -2px var(--laranja-escuro)}
+.btn-zap svg{width:26px;height:26px;flex:none}
+.apoio{font-size:14.5px;margin-top:16px;text-align:center}
+.link-site{display:block;text-align:center;margin-top:10px;font-size:15px;font-weight:600;text-underline-offset:4px}
+
+/* ---------- Hero ---------- */
+.hero{background:linear-gradient(170deg,var(--roxo-fundo) 0%,var(--roxo) 55%,var(--roxo-2) 100%);color:#fff;position:relative;overflow:hidden;padding-block:28px 64px}
+.lupa-fundo{position:absolute;right:-120px;top:40px;width:420px;height:auto;pointer-events:none;opacity:.9}
+.pilula{position:absolute;background:var(--laranja);border-radius:0 60px 60px 0}
+.pilula.p1{left:0;bottom:120px;width:46px;height:84px}
+.pilula.p2{right:0;top:120px;width:40px;height:72px;border-radius:60px 0 0 60px}
+.hero .miolo{position:relative;z-index:2}
+.hero-topo{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.selo{font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:100px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22)}
+.hero .olho{color:#FFB79B;margin-top:56px}
+.hero h1{font-size:clamp(46px,13vw,76px);font-weight:800;margin-top:12px}
+.hero h1 em{font-style:normal;color:var(--laranja);display:block}
+.hero .h2{font-family:var(--f-corpo);font-size:clamp(18px,4.6vw,21px);line-height:1.5;color:#E9E1F7;margin-top:20px;font-weight:500}
+.hero .h2 b{color:#fff;font-weight:700}
+.hero .acao{margin-top:32px}
+.hero .apoio{color:#D6CBEA}
+.hero .link-site{color:#fff;opacity:.85}
+
+/* ---------- Vídeo ---------- */
+.video{background:var(--lilas)}
+.video h2{font-size:clamp(26px,6.5vw,34px);color:var(--roxo)}
+.video-moldura{
+  margin:26px auto 0;width:100%;max-width:330px;aspect-ratio:9/16;border-radius:24px;
+  background:linear-gradient(160deg,var(--roxo) 0%,var(--roxo-2) 100%);
+  position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;color:#fff;text-align:center;padding:24px;
+  box-shadow:0 24px 50px -24px rgba(58,26,107,.55)
+}
+.video-moldura::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;border:34px solid rgba(255,255,255,.08);top:-70px;right:-90px}
+.play{width:78px;height:78px;border-radius:50%;background:var(--laranja);display:grid;place-items:center;position:relative;z-index:1}
+.play svg{width:30px;height:30px;margin-left:5px}
+.video-moldura .nota{font-size:13.5px;color:#D6CBEA;max-width:220px;position:relative;z-index:1}
+.video-moldura .nome{font-family:var(--f-display);font-weight:700;font-size:20px;position:relative;z-index:1}
+.legenda-video{margin-top:22px;text-align:center;font-size:17px;color:var(--tinta)}
+.legenda-video b{color:var(--roxo)}
+
+/* ---------- Provocação ---------- */
+.provoca h2{font-size:clamp(30px,8vw,44px);color:var(--roxo)}
+.provoca h2 span{color:var(--laranja)}
+.provoca p{margin-top:20px;font-size:18px;color:var(--tinta-suave);max-width:58ch}
+.grupo-bairro{
+  margin-top:28px;background:var(--lilas);border-radius:18px;padding:18px;display:flex;flex-direction:column;gap:10px
+}
+.msg{background:#fff;border-radius:4px 16px 16px 16px;padding:10px 14px;font-size:15px;max-width:88%;box-shadow:0 1px 0 var(--linha)}
+.msg small{display:block;font-weight:700;font-size:12.5px;color:var(--roxo-2);margin-bottom:2px}
+.msg.voce{align-self:flex-end;border-radius:16px 4px 16px 16px;background:#FFE3D8}
+.msg.voce small{color:var(--laranja-escuro)}
+.grupo-topo{font-size:12.5px;font-weight:600;color:var(--tinta-suave);text-transform:uppercase;letter-spacing:.08em}
+
+/* ---------- Prova social ---------- */
+.prova{background:var(--roxo);color:#fff}
+.prova .num{font-family:var(--f-display);font-weight:800;font-size:clamp(64px,18vw,104px);line-height:.95;color:var(--laranja);letter-spacing:-.03em}
+.prova h2{font-size:clamp(26px,6.5vw,34px);margin-top:6px}
+.prova p{margin-top:16px;color:#E1D6F3;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.chip{background:var(--laranja);color:#fff;font-weight:700;font-size:14.5px;padding:7px 15px;border-radius:100px}
+.chip.vazio{background:transparent;border:2px dashed rgba(255,255,255,.5);color:#fff}
+.ressalva{font-size:12.5px !important;color:#B9A9D6 !important;margin-top:18px !important}
+
+/* ---------- Vantagens ---------- */
+.vantagens h2{font-size:clamp(28px,7vw,38px);color:var(--roxo)}
+.lista-v{display:grid;grid-template-columns:1fr;gap:14px;margin-top:28px}
+@media(min-width:560px){.lista-v{grid-template-columns:1fr 1fr}}
+.v{border:1.5px solid var(--linha);border-radius:18px;padding:20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.v .ic{width:44px;height:44px;border-radius:12px;background:#FFE3D8;display:grid;place-items:center}
+.v .ic svg{width:24px;height:24px;stroke:var(--laranja-escuro);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.v h3{font-size:20px;color:var(--roxo)}
+.v p{font-size:15.5px;color:var(--tinta-suave)}
+.v.destaque{background:var(--lilas);border-color:transparent}
+@media(min-width:560px){.v.destaque{grid-column:1/-1}}
+
+/* ---------- Como funciona ---------- */
+.como{background:var(--lilas)}
+.como h2{font-size:clamp(28px,7vw,38px);color:var(--roxo)}
+.passos{list-style:none;margin:28px 0 0;padding:0;display:flex;flex-direction:column;gap:0}
+.passo{display:grid;grid-template-columns:52px 1fr;gap:16px;position:relative;padding-bottom:26px}
+.passo:last-child{padding-bottom:0}
+.passo:not(:last-child)::after{content:"";position:absolute;left:25px;top:52px;bottom:4px;width:2px;background:repeating-linear-gradient(var(--roxo-2) 0 6px,transparent 6px 12px);opacity:.35}
+.bolinha{width:52px;height:52px;border-radius:50%;background:var(--roxo);color:#fff;font-family:var(--f-display);font-weight:800;font-size:22px;display:grid;place-items:center}
+.passo h3{font-size:20px;color:var(--roxo);margin-top:4px}
+.passo p{font-size:16px;color:var(--tinta-suave);margin-top:6px}
+
+/* ---------- Urgência ---------- */
+.urgencia{background:var(--laranja);color:#fff;position:relative;overflow:hidden}
+.urgencia h2{font-size:clamp(32px,8.5vw,48px);font-weight:800}
+.urgencia p{margin-top:16px;font-size:18px;max-width:52ch;color:#FFF1EA}
+.urgencia .miolo{position:relative;z-index:1}
+.lupa-urg{position:absolute;right:-70px;bottom:-90px;width:260px;opacity:.18}
+
+/* ---------- FAQ ---------- */
+.faq h2{font-size:clamp(28px,7vw,38px);color:var(--roxo)}
+.perguntas{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+details{border:1.5px solid var(--linha);border-radius:14px;padding:0 18px;background:#fff}
+details[open]{border-color:var(--roxo-2)}
+summary{cursor:pointer;list-style:none;font-family:var(--f-display);font-weight:600;font-size:17.5px;color:var(--roxo);padding:16px 30px 16px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:24px;color:var(--laranja);font-weight:700;transition:transform .2s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg)}
+details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
+
+/* ---------- Fechamento ---------- */
+.fecho{background:linear-gradient(170deg,var(--roxo) 0%,var(--roxo-fundo) 100%);color:#fff;text-align:center;padding-block:64px 72px}
+.fecho h2{font-size:clamp(32px,9vw,50px);font-weight:800}
+.fecho h2 em{font-style:normal;color:var(--laranja)}
+.fecho .acao{margin-top:30px}
+.fecho .apoio{color:#D6CBEA}
+.fecho .link-site{color:#fff;opacity:.85}
+.contato{margin-top:36px;font-size:14px;color:#B9A9D6}
+.contato strong{color:#fff;font-size:17px;user-select:all;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.rodape{background:var(--roxo-fundo);color:#9C8BBE;font-size:12.5px;text-align:center;padding-block:22px 96px}
+.rodape .logo{width:110px;margin:0 auto 10px}
+
+/* ---------- WhatsApp flutuante ---------- */
+.zap-flutua{
+  position:fixed;z-index:20;
+  right:calc(16px + env(safe-area-inset-right, 0px));
+  bottom:calc(16px + env(safe-area-inset-bottom, 0px));
+  display:flex;align-items:center;gap:10px;
+  background:var(--zap);color:#fff;text-decoration:none;font-weight:700;font-size:15px;
+  padding:12px 18px 12px 14px;border-radius:100px;box-shadow:0 10px 26px -8px rgba(0,0,0,.45)
+}
+.zap-flutua svg{width:26px;height:26px}
+
+@media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}
+</style>
+
+<!-- Símbolos reutilizáveis -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo-qf" viewBox="76 118 584 128">
+    <path fill="currentColor" d="M 241.605469 162.082031 L 257.613281 162.082031 L 257.613281 201.582031 C 257.613281 217.285156 244.390625 230.082031 228.175781 230.082031 L 223.214844 230.082031 C 206.992188 230.082031 193.769531 217.285156 193.769531 201.582031 L 193.769531 162.082031 L 209.679688 162.082031 L 209.679688 202.285156 C 209.679688 209.082031 215.464844 214.683594 222.488281 214.683594 L 228.894531 214.683594 C 235.921875 214.683594 241.605469 209.082031 241.605469 202.285156 Z"/>
+    <path fill="#FF5F29" d="M 625.84375 177.648438 L 586.171875 214.75 L 626.464844 214.75 L 626.464844 230.148438 L 562.621094 230.148438 L 562.621094 215.25 L 563.238281 214.75 L 602.910156 177.648438 L 562.621094 177.648438 L 562.621094 162.148438 L 626.464844 162.148438 L 626.464844 177.050781 Z"/>
+    <path fill="currentColor" d="M 410.4375 162.082031 L 410.335938 162.082031 C 401.878906 162.082031 394.257812 165.585938 388.878906 171.144531 C 383.5 165.585938 375.878906 162.082031 367.417969 162.082031 L 367.316406 162.082031 C 351.101562 162.082031 337.878906 174.882812 337.878906 190.582031 L 337.878906 230.082031 L 353.785156 230.082031 L 353.785156 189.882812 C 353.785156 183.082031 359.570312 177.582031 366.597656 177.582031 L 368.140625 177.582031 C 375.164062 177.582031 380.847656 183.082031 380.847656 189.882812 L 380.847656 230.082031 L 396.863281 230.082031 L 396.863281 190.582031 C 396.863281 190.308594 396.828125 190.039062 396.820312 189.765625 C 396.886719 183.019531 402.632812 177.582031 409.617188 177.582031 L 411.160156 177.582031 C 418.183594 177.582031 423.867188 183.082031 423.867188 189.882812 L 423.867188 230.082031 L 439.882812 230.082031 L 439.882812 190.582031 C 439.882812 174.882812 426.660156 162.082031 410.4375 162.082031"/>
+    <path fill="#FF5F29" d="M 494.867188 139.90625 L 494.867188 124.457031 L 482.339844 124.457031 L 482.339844 124.453125 C 482.332031 124.453125 482.320312 124.457031 482.308594 124.457031 L 482.289062 124.457031 C 475.972656 124.542969 470.140625 126.335938 465.203125 129.457031 C 455.597656 135.457031 449.191406 146.15625 449.191406 158.457031 L 449.191406 230.082031 L 465.101562 230.082031 L 465.101562 177.582031 L 484.3125 177.582031 L 484.3125 162.082031 L 465.089844 162.082031 L 465.089844 158.457031 C 465.089844 148.328125 472.800781 140.152344 482.289062 139.882812 L 482.289062 139.90625 Z"/>
+    <path fill="#FF5F29" d="M 537.523438 202.140625 C 535.148438 209.433594 528.6875 214.683594 520.992188 214.683594 C 511.382812 214.683594 503.429688 206.382812 503.429688 196.085938 C 503.429688 185.992188 511.222656 177.792969 520.691406 177.617188 L 537.554688 177.617188 L 537.554688 202.140625 Z M 553.566406 162.085938 L 553.566406 162.082031 L 519.191406 162.082031 L 519.191406 162.175781 C 501.539062 163.132812 487.519531 177.902344 487.519531 196.085938 C 487.519531 214.882812 502.496094 230.085938 520.992188 230.085938 C 527.140625 230.085938 532.761719 228.410156 537.554688 225.503906 L 537.554688 230.085938 L 553.566406 230.085938 Z"/>
+    <path fill="#FF5F29" d="M 116.132812 156.148438 C 111.761719 160.523438 108.976562 166.066406 108.078125 172.070312 C 107.742188 174.320312 109.453125 176.359375 111.726562 176.359375 L 112.332031 176.359375 C 114.199219 176.359375 115.699219 174.949219 115.992188 173.101562 C 116.664062 168.835938 118.660156 164.902344 121.773438 161.785156 C 122.910156 160.648438 124.160156 159.65625 125.5 158.824219 C 127.039062 157.871094 127.726562 156 127.023438 154.335938 L 126.746094 153.683594 C 125.859375 151.59375 123.316406 150.800781 121.382812 151.992188 C 119.488281 153.15625 117.734375 154.546875 116.132812 156.148438"/>
+    <path fill="currentColor" d="M 281.191406 189.632812 L 281.457031 188.957031 C 284.261719 181.742188 290.824219 177.082031 298.175781 177.082031 C 305.515625 177.082031 312.0625 181.742188 314.851562 188.957031 L 315.117188 189.632812 Z M 298.175781 162.082031 C 279.683594 162.082031 264.707031 177.28125 264.707031 196.082031 C 264.707031 214.882812 279.683594 230.082031 298.175781 230.082031 C 298.378906 230.082031 298.574219 230.085938 298.777344 230.082031 L 314.390625 230.082031 L 314.390625 214.65625 L 298.777344 214.65625 L 298.777344 214.640625 C 298.574219 214.648438 298.378906 214.648438 298.175781 214.648438 C 290.429688 214.648438 283.765625 209.28125 281.46875 201.792969 L 328.78125 201.792969 C 330.296875 201.792969 331.527344 200.605469 331.617188 199.09375 C 332.386719 185.777344 327.082031 162.082031 298.175781 162.082031"/>
+    <path fill="currentColor" d="M 192.308594 228.054688 L 175.90625 206.980469 C 181.46875 198.617188 184.769531 188.515625 184.769531 177.582031 C 184.769531 148.582031 161.832031 125.082031 133.625 125.082031 C 105.429688 125.082031 82.59375 148.582031 82.59375 177.582031 C 82.59375 206.582031 105.429688 230.082031 133.625 230.082031 C 141.355469 230.082031 148.632812 228.273438 155.15625 225.164062 L 146.210938 213.476562 C 146.234375 213.46875 146.261719 213.453125 146.289062 213.445312 L 144.390625 210.964844 C 141 212.1875 137.382812 212.886719 133.597656 212.886719 C 115.15625 212.886719 100.207031 197.078125 100.207031 177.582031 C 100.207031 158.085938 115.15625 142.28125 133.597656 142.28125 C 152.042969 142.28125 166.992188 158.085938 166.992188 177.582031 C 166.992188 189.214844 161.648438 199.496094 153.4375 205.921875 L 178.695312 238.710938 C 179.34375 239.550781 180.128906 240.226562 181 240.730469 C 183.871094 242.476562 187.605469 242.460938 190.5 240.402344 C 194.503906 237.546875 195.324219 231.933594 192.308594 228.054688"/>
+    <path fill="currentColor" d="M 637.398438 228.933594 L 637.398438 214.742188 L 653.214844 214.742188 L 653.214844 228.933594 C 653.214844 229.601562 652.675781 230.140625 652.011719 230.140625 L 638.605469 230.140625 C 637.941406 230.140625 637.398438 229.601562 637.398438 228.933594 M 637.398438 204.640625 L 635.203125 139.90625 L 653.214844 139.90625 L 653.214844 204.640625 C 653.214844 205.308594 652.675781 205.847656 652.011719 205.847656 L 638.605469 205.847656 C 637.9375 205.847656 637.398438 205.308594 637.398438 204.640625"/>
+  </symbol>
+  <symbol id="ic-zap" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/>
+  </symbol>
+</svg>
+
+<header class="hero">
+  <svg class="lupa-fundo" viewBox="0 0 420 520" aria-hidden="true" fill="none">
+    <circle cx="210" cy="210" r="180" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/>
+    <circle cx="210" cy="210" r="128" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/>
+    <path d="M150 110 a110 110 0 0 0 -40 70" stroke="#FF5F29" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M300 330 L410 480" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/>
+    <path d="M335 300 L440 440" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/>
+  </svg>
+  <span class="pilula p1" aria-hidden="true"></span>
+  <span class="pilula p2" aria-hidden="true"></span>
+
+  <div class="miolo">
+    <div class="hero-topo">
+      <svg class="logo" role="img" aria-label="QuemFaz!"><use href="#logo-qf"/></svg>
+      <span class="selo">Em todo o Brasil</span>
+    </div>
+
+    <p class="olho">Cadastro grátis · sem comissão</p>
+    <h1>Procuramos <em>QUEM FAZ!</em></h1>
+    <p class="h2">Eletricista, manicure, fotógrafo, diarista, confeiteira, professor, pedreiro e muitos outros profissionais: <b>se você faz bem feito, seu lugar é aqui.</b> Cadastro grátis, sem comissão, e o cliente da sua cidade fala direto com você.</p>
+
+    <div class="acao">
+      <a class="btn-zap" id="cta-topo" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener">
+        <svg aria-hidden="true"><use href="#ic-zap"/></svg>
+        Quero me cadastrar com a Carol
+      </a>
+      <p class="apoio">Ela faz o cadastro junto com você pelo WhatsApp.</p>
+      <a class="link-site" id="site-topo" href="https://quemfazservicos.com.br/" target="_blank" rel="noopener">Prefiro me cadastrar sozinho pelo site</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="faixa video" aria-labelledby="t-video">
+    <div class="miolo">
+      <h2 id="t-video">Em 40 segundos, a Carol te explica tudo.</h2>
+      <div class="video-moldura" role="img" aria-label="Espaço do vídeo de apresentação da Carol">
+        <div class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="#fff" d="M6 4l15 8-15 8z"/></svg></div>
+        <p class="nome">Oi, eu sou a Carol!</p>
+        <p class="nota">Vídeo da Carol entra aqui (corte de ~40s para profissionais, com legenda)</p>
+      </div>
+      <p class="legenda-video">E é ela mesma quem vai te atender <b>quando você chamar no WhatsApp.</b></p>
+    </div>
+  </section>
+
+  <section class="faixa provoca" aria-labelledby="t-provoca">
+    <div class="miolo">
+      <h2 id="t-provoca">Quantos clientes procuraram alguém como você esse mês <span>e não te acharam?</span></h2>
+      <p>Indicação é ouro, mas tem semana que o telefone não toca. Enquanto isso, alguém na sua cidade está perguntando no grupo do bairro quem conhece um profissional de confiança, e quem aparece primeiro leva o serviço.</p>
+      <div class="grupo-bairro" aria-hidden="true">
+        <span class="grupo-topo">Grupo do bairro · agora</span>
+        <div class="msg"><small>Vizinha da rua 7</small>Alguém conhece um eletricista bom aqui perto? 🙏</div>
+        <div class="msg"><small>Seu Antônio</small>Conheço não. Tenta no QuemFaz, lá mostra as avaliações</div>
+        <div class="msg voce"><small>Você?</small>Se você estivesse lá, esse cliente era seu.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa prova" aria-labelledby="t-prova">
+    <div class="miolo">
+      <p class="num">+100</p>
+      <h2 id="t-prova">profissionais já estão lá.</h2>
+      <p>Profissionais de várias cidades do Brasil que montaram o perfil antes da abertura oficial. Falta o seu.</p>
+      <div class="chips">
+        <span class="chip">Elétrica</span><span class="chip">Beleza</span><span class="chip">Construção</span><span class="chip">Limpeza</span><span class="chip">Eventos</span><span class="chip">Aulas</span><span class="chip">Gastronomia</span><span class="chip">Fretes</span><span class="chip">Climatização</span><span class="chip vazio">O seu serviço</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa vantagens" aria-labelledby="t-vant">
+    <div class="miolo">
+      <h2 id="t-vant">Por que estar aqui</h2>
+      <div class="lista-v">
+        <div class="v">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M20 12v9H4v-9M2 7h20v5H2zM12 21V7M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z"/></svg></span>
+          <h3>Grátis de verdade</h3>
+          <p>Sem mensalidade e sem taxa escondida.</p>
+        </div>
+        <div class="v">
+          <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15 9.5c-.5-1-1.6-1.5-3-1.5-1.7 0-3 .8-3 2s1.3 1.7 3 2 3 .8 3 2-1.3 2-3 2c-1.4 0-2.5-.5-3-1.5M12 6v2M12 16v2"/></svg></span>
+          <h3>Zero comissão</h3>
+          <p>O que você combinar com o cliente é 100% seu.</p>
+        </div>
+        <div class="v">
+          <span class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.7A8 8 0 1 1 21 12z"/></svg></span>
+          <h3>O cliente fala direto com você</h3>
+          <p>Pelo seu WhatsApp ou pelo chat da plataforma, sem ninguém no meio.</p>
+        </div>
+        <div class="v">
+          <span class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="8.5" cy="10" r="1.6"/><path d="M21 16l-5-5-8 8"/></svg></span>
+          <h3>Portfólio que trabalha por você</h3>
+          <p>Fotos do seu trabalho e avaliações de clientes num link só, que você manda até pra quem chegou por indicação.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faixa como" aria-labelledby="t-como">
+    <div class="miolo">
+      <h2 id="t-como">Como funciona</h2>
+      <ol class="passos">
+        <li class="passo">
+          <span class="bolinha">1</span>
+          <div><h3>Chama a Carol</h3><p>Ela faz o cadastro com você. Só precisa do seu CPF (ou CNPJ), telefone e e-mail.</p></div>
+        </li>
+        <li class="passo">
+          <span class="bolinha">2</span>
+          <div><h3>Seu perfil passa por uma aprovação rápida</h3><p>E entra no ar pra quem procura o seu serviço na sua cidade.</p></div>
+        </li>
+        <li class="passo">
+          <span class="bolinha">3</span>
+          <div><h3>Você completa com fotos do seu trabalho</h3><p>O cliente te encontra pelo serviço e pela cidade, e chama direto.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="faixa urgencia" aria-labelledby="t-urg">
+    <svg class="lupa-urg" viewBox="0 0 100 100" aria-hidden="true"><circle cx="42" cy="42" r="30" fill="none" stroke="#fff" stroke-width="10"/><path d="M64 64l24 30" stroke="#fff" stroke-width="10" stroke-linecap="round"/></svg>
+    <div class="miolo">
+      <h2 id="t-urg">Quem chega primeiro ocupa o espaço.</h2>
+      <p>A QuemFaz está abrindo agora. Os primeiros profissionais de cada serviço, em cada cidade, são os que o cliente encontra primeiro quando procurar. Daqui a uns meses, esse lugar pode ser do seu concorrente.</p>
+    </div>
+  </section>
+
+  <section class="faixa faq" aria-labelledby="t-faq">
+    <div class="miolo">
+      <h2 id="t-faq">Perguntas rápidas</h2>
+      <div class="perguntas">
+        <details><summary>Paga alguma coisa?</summary><p>Nada. Nem pra entrar, nem pra ficar, nem comissão no serviço.</p></details>
+        <details><summary>Preciso de CNPJ?</summary><p>Não. Dá pra se cadastrar só com CPF.</p></details>
+        <details><summary>Meu serviço não está na lista. E agora?</summary><p>Escolhe o mais próximo e sugere a sua categoria. A Carol te ajuda nisso.</p></details>
+        <details><summary>Funciona na minha cidade?</summary><p>Sim. O cadastro é aberto pra profissionais de todo o Brasil, e o cliente te encontra pela cidade que você atende.</p></details>
+        <details><summary>E se eu travar no cadastro?</summary><p>Chama a Carol no WhatsApp. Ela resolve com você.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="fecho" aria-labelledby="t-fecho">
+    <div class="miolo">
+      <p class="olho" style="color:#FFB79B;margin-bottom:14px">Quem procura, encontra QuemFaz</p>
+      <h2 id="t-fecho">Você já faz. <em>Agora deixa o cliente te achar.</em></h2>
+      <div class="acao">
+        <a class="btn-zap" id="cta-fim" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#ic-zap"/></svg>
+          Quero me cadastrar com a Carol
+        </a>
+        <a class="link-site" id="site-fim" href="https://quemfazservicos.com.br/" target="_blank" rel="noopener">Cadastrar pelo site</a>
+      </div>
+      <p class="contato">WhatsApp da Carol<br><strong>(19) 98961-6006</strong></p>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="miolo">
+    <svg class="logo" role="img" aria-label="QuemFaz!"><use href="#logo-qf"/></svg>
+    quemfazservicos.com.br
+  </div>
+</footer>
+
+<a class="zap-flutua" id="zap-flutua" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener" aria-label="Falar com a Carol no WhatsApp">
+  <svg aria-hidden="true"><use href="#ic-zap"/></svg>
+  Falar com a Carol
+</a>
+
+</body></html>
