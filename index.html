@@ -197,7 +197,6 @@ a{color:inherit}
 .video-moldura::before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;border:34px solid rgba(255,255,255,.08);top:-70px;right:-90px}
 .legenda-video{margin-top:22px;text-align:center;font-size:17px;color:var(--tinta)}
 .legenda-video b{color:var(--roxo)}
-.video-moldura iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:1}
 
 /* ---------- Provocação ---------- */
 .provoca h2{font-size:clamp(30px,8vw,44px);color:var(--roxo)}
@@ -348,7 +347,9 @@ details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
     <div class="miolo">
       <h2 id="t-video">Em 40 segundos, a Carol te explica tudo.</h2>
       <div class="video-moldura">
-        <iframe src="https://www.youtube-nocookie.com/embed/IV3aEE7vDuo?playsinline=1&amp;rel=0" title="Vídeo de apresentação da Carol" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="player" data-player>
+          <video src="assets/carol-quemfaz.mp4" poster="assets/carol-quemfaz-capa.webp" width="720" height="1280" preload="metadata" playsinline controls aria-label="Vídeo de apresentação da Carol"></video>
+        </div>
       </div>
       <p class="legenda-video">E é ela mesma quem vai te atender <b>quando você chamar no WhatsApp.</b></p>
     </div>
@@ -477,5 +478,6 @@ details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
 </a>
 
 <script src="assets/site.js" defer></script>
+<script src="assets/player.js" defer></script>
 </body>
 </html>
