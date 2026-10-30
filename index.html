@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
+<!-- Consent Mode: tudo negado até o aceite no banner de cookies (assets/site.js atualiza) -->
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('consent', 'default', {ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500});
+try { if (localStorage.getItem('qf-consentimento') === 'aceito') gtag('consent', 'update', {ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted'}); } catch (e) {}
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5BJK62H8');</script>
+<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Procuramos Quem Faz: cadastro grátis para profissionais</title>
@@ -290,6 +304,10 @@ details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BJK62H8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <!-- Símbolos reutilizáveis -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -331,12 +349,12 @@ details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
     <p class="h2">Eletricista, manicure, fotógrafo, diarista, confeiteira, professor, pedreiro e muitos outros profissionais: <b>se você faz bem feito, seu lugar é aqui.</b> Cadastro grátis, sem comissão, e o cliente da sua cidade fala direto com você.</p>
 
     <div class="acao">
-      <a class="btn-zap" id="cta-topo" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener">
+      <a class="btn-zap" id="cta-topo" data-lead="whatsapp" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener">
         <svg aria-hidden="true"><use href="#ic-zap"/></svg>
         Quero me cadastrar com a Carol
       </a>
       <p class="apoio">Ela faz o cadastro junto com você pelo WhatsApp.</p>
-      <a class="link-site" id="site-topo" href="https://quemfazservicos.com.br/" target="_blank" rel="noopener">Prefiro me cadastrar sozinho pelo site</a>
+      <a class="link-site" id="site-topo" data-lead="site" href="https://quemfazservicos.com.br/" target="_blank" rel="noopener">Prefiro me cadastrar sozinho pelo site</a>
     </div>
   </div>
 </header>
@@ -453,11 +471,11 @@ details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
       <p class="olho" style="color:#FFB79B;margin-bottom:14px">Quem procura, encontra QuemFaz</p>
       <h2 id="t-fecho">Você já faz. <em>Agora deixa o cliente te achar.</em></h2>
       <div class="acao">
-        <a class="btn-zap" id="cta-fim" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener">
+        <a class="btn-zap" id="cta-fim" data-lead="whatsapp" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener">
           <svg aria-hidden="true"><use href="#ic-zap"/></svg>
           Quero me cadastrar com a Carol
         </a>
-        <a class="link-site" id="site-fim" href="https://quemfazservicos.com.br/" target="_blank" rel="noopener">Cadastrar pelo site</a>
+        <a class="link-site" id="site-fim" data-lead="site" href="https://quemfazservicos.com.br/" target="_blank" rel="noopener">Cadastrar pelo site</a>
       </div>
       <p class="contato">WhatsApp da Carol<br><strong>(19) 98961-6006</strong></p>
     </div>
@@ -472,7 +490,7 @@ details p{padding-bottom:16px;color:var(--tinta-suave);font-size:16px}
   </div>
 </footer>
 
-<a class="zap-flutua" id="zap-flutua" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener" aria-label="Falar com a Carol no WhatsApp">
+<a class="zap-flutua" id="zap-flutua" data-lead="whatsapp" href="https://wa.me/5519989616006?text=Oi%20Carol%2C%20vim%20pela%20p%C3%A1gina%20Brasil%20e%20quero%20me%20cadastrar%20no%20QuemFaz" target="_blank" rel="noopener" aria-label="Falar com a Carol no WhatsApp">
   <svg aria-hidden="true"><use href="#ic-zap"/></svg>
   Falar com a Carol
 </a>
